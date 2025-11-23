@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎注册</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .content {
+            padding: 30px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .code {
+            display: inline-block;
+            background-color: #f0f0f0;
+            padding: 12px 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            border-radius: 4px;
+            letter-spacing: 2px;
+            margin: 20px 0;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            border-top: 1px solid #eee;
+        }
+        .warning {
+            color: #e74c3c;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>欢迎注册我们的网站</h1>
+    </div>
+    <div class="content">
+        <p>您好！</p>
+        <p>感谢您注册我们的网站。您的验证码是：</p>
+        <div class="code">{{code}}</div>
+        <p>该验证码有效期为 <strong>3分钟</strong>，请勿泄露给他人。</p>
+        <p class="warning">如果您没有进行注册操作，请忽略此邮件。</p>
+    </div>
+    <div class="footer">
+        <p>此邮件为系统自动发送，请勿回复。</p>
+        <p>————————&copy;Godplace's Blog————————</p>
+    </div>
+</div>
+</body>
+</html>

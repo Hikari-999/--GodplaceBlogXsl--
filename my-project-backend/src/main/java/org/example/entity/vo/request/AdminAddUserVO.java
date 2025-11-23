@@ -1,0 +1,26 @@
+package org.example.entity.vo.request;
+
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Pattern;
+import lombok.Data;
+import org.hibernate.validator.constraints.Length;
+
+/**
+ * 管理员添加用户表单信息
+ */
+@Data
+public class AdminAddUserVO {
+    @Email
+    @Length(min = 4)
+    String email;
+
+    @Pattern(regexp = "^[a-zA-Z0-9\\u4e00-\\u9fa5]+$")
+    @Length(min = 1, max = 10)
+    String username;
+
+    @Length(min = 6, max = 20)
+    String password;
+
+    String role;
+}

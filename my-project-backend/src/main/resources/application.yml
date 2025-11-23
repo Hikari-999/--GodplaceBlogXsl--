@@ -1,0 +1,77 @@
+server:
+  port: 8080
+  #ssl:
+   # key-store: classpath:ca.jks
+   # key-store-password: 7a6b6e0y
+   # key-store-type: JKS
+spring:
+  mail:
+    host: smtp.163.com
+    username: xxxxxxxxxxxxxxxxxxx
+    password: xxxxxxxxxxxxxxxxxxx
+  rabbitmq:
+    addresses: localhost
+    username: admin
+    password: admin
+    virtual-host: /
+  security:
+    jwt:
+      key: 'abcdefghijklmn'
+      expire: 72
+      limit:
+        base: 10
+        upgrade: 300
+        frequency: 30
+    filter:
+      order: -100
+  web:
+    verify:
+      mail-limit: 60
+      web-task: 60
+    flow:
+      period: 5
+      limit: 100
+      block: 30
+  datasource:
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 20
+      connection-timeout: 30000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+  ai:
+    openai:
+      api-key: sk-xxxxxxxxxxxxxxxxxxx  # 替换为你的千问API Key
+      base-url: https://dashscope.aliyuncs.com/compatible-mode
+      chat:
+        options:
+          model: qwen-plus
+      embedding:
+        options:
+          model: text-embedding-v3
+alipay:
+  #请求协议
+  protocol: xxxxxxxxxxxxxxxxxxx
+  #请求网关
+  gatewayHost: xxxxxxxxxxxxxxxxxxx
+  #签名类型
+  signType: xxxxxxxxxxxxxxxxxxx
+  #appid
+  appId: xxxxxxxxxxxxxxxxxxx
+  #私钥
+  merchantPrivateKey: xxxxxxxxxxxxxxxxxxx.txt
+  #应用公钥证书文件路径
+  merchantCertPath: xxxxxxxxxxxxxxxxxxx.crt
+  #支付宝公钥证书文件路径
+  alipayCertPath: xxxxxxxxxxxxxxxxxxx.crt
+  #支付宝根证书文件路径
+  alipayRootCertPath: xxxxxxxxxxxxxxxxxxx.crt
+  #异步通知地址
+  notifyUrl: xxxxxxxxxxxxxxxxxxx
+# 前端文章目录路径配置（相对路径）
+frontend:
+  articles:
+    path: my-project-frontend/src/assets/articles
