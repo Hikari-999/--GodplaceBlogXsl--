@@ -3,7 +3,7 @@
     <el-container class="main-container">
       <el-main class="main-content">
         <div class="background-container">
-          <img class="background-image" src="@/img/imageBackground.jpg" alt="Background Image">
+          <img class="background-image" src="@/img/yourname.jpg" alt="Background Image">
           <div class="wave-effect"></div>
           <!-- 在 template 中 -->
 
