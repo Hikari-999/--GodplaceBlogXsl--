@@ -1,15 +1,20 @@
 <script setup>
 import { ref, onMounted, onUpdated, watch } from "vue";
 import travelSong from "@/assets/Travelers' encore.mp3";
+import weDontTalkAnymore from "@/assets/WeDon'tTalkAnymore.flac";
 
 const songs = [
   {
     title: "烤棉花糖",
     url: travelSong,
   },
+  {
+    title: "We Don't Talk Anymore",
+    url: weDontTalkAnymore,
+  },
 ];
 
-const currentSong = ref(songs[0]);
+const currentSong = ref(songs[1]);
 const currentSongIndex = ref(0);
 const isPlaying = ref(false);
 const volume = ref(0.5); // 默认音量 50%

@@ -11,8 +11,15 @@
  Target Server Version : 80032 (8.0.32)
  File Encoding         : 65001
 
- Date: 11/09/2025 16:37:51
+
 */
+
+-- ----------------------------
+-- Create Database
+-- ----------------------------
+CREATE DATABASE IF NOT EXISTS `test` CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
+
+USE `test`;
 
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;

@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
  * @date 2025/8/8
  * @description 全局初始化配置
  */
-@Configuration
+//@Configuration
 @Slf4j
 public class InitConfig implements InitializingBean {
     private final AliPayConfig aliPayConfig;
